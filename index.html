@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Layanan gestun cepat dan aman di Jakarta. Gesek kartu kredit Anda sekarang tanpa ribet!"
+    />
+    <title>DhapCoffee</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Dhap<span>Coffee</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Butuh tempat nongkrong nyaman?<span>Nikmati Kopi Enak, Suasana Nyaman!</span></h1>
+        <p>
+          Temukan tempat ngopi terbaik di Jakarta dengan suasana cozy dan menu spesial dari CoffeDhap.
+        </p>
+        <a href="#" class="cta">Pesan Sekarang</a>
+      </main>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/coffe2.png" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa Harus Ngopi di CoffeDhap?</h3>
+          <p>
+            Kami menyajikan kopi berkualitas, pelayanan ramah, dan tempat yang nyaman untuk santai atau kerja.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Menu Section Start -->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> Kami</h2>
+      <p>Kami menyediakan berbagai pilihan menu kopi terbaik untuk Anda.</p>
+    
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/arabika.jpg" alt="Kopi Arabika">
+          <p>coffee1</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/espresso.jpg" alt="Kopi Robusta">
+          <p>coffee2</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/robusta.jpg" alt="Cappuccino">
+          <p>coffee3</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Menu Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>Punya pertanyaan atau ingin reservasi? Langsung chat kami lewat WhatsApp!</p>
+
+      <div class="row">
+        <iframe
+          src="isi alamat"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"></iframe>
+
+        <form id="contact-form">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" name="user_name" placeholder="name" required />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="email" name="user_email" placeholder="mail" required />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" name="user_phone" placeholder="no hp" />
+          </div>
+          <!-- Tambahan field pesan -->
+          <div class="input-group">
+            <i data-feather="message-square"></i>
+            <textarea name="message" placeholder="Tulis pesan Anda..." rows="3" required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- contact Section End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="#"><i data-feather="phone"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>&copy; <span id="year"></span> CoffeDhap Jakarta. Semua Hak Cipta Dilindungi.</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      emailjs.init(""); // Ganti dengan public key dari EmailJS
+    </script>
+
+    <!-- Feather Icons activate -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Link to external JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
